@@ -18,7 +18,7 @@ class BonusServiceTest {
     }
 
     @Test
-    void shouldCalculateForNoRegisteredAndLimit_02() {
+    void shouldCalculateForRegisteredAndLimit_02() {
         BonusService service = new BonusService();
         long amount = 1_000_000;
         boolean registered = true;
@@ -58,7 +58,7 @@ class BonusServiceTest {
     }
 
     @Test
-    void shouldCalculateForNoRegisteredAndLimitBorderline_06() {
+    void shouldCalculateForRegisteredAndLimitBorderline_06() {
         BonusService service = new BonusService();
         long amount = 3000;
         boolean registered = true;
